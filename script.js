@@ -39,7 +39,7 @@ container.addEventListener('touchstart', (e) => {
     const timeSinceLastTouch = currentTime - lastTouchTime;
 
     if (timeSinceLastTouch < 300 && timeSinceLastTouch > 0) {
-        
+        e.preventDefault();
         handleLiked(e);
         e.preventDefault(); 
     }
